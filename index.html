@@ -1,0 +1,431 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Adélia &amp; Guga Mega Hair · Loja e salão em Alphaville</title>
+  <meta name="description" content="Mechas de fios naturais, kits de manutenção e reserva de horário no salão Adélia & Guga Mega Hair, Calçada Flor de Lótus, 9 · Alphaville, Barueri/SP. Entrega por km e pagamento via Pix.">
+  <meta name="theme-color" content="#013437">
+  <link rel="icon" href="assets/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400..900;1,400..700&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="assets/salao.jpg">
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- ?movimento=1 mostra todas as animações mesmo com "reduzir movimento" ativo no sistema (útil para conferir) -->
+  <script>if (/[?&]movimento\b/.test(location.search)) document.documentElement.classList.add("force-motion");</script>
+</head>
+<body>
+<!--
+  THESIS: a loja é o próprio salão. Toda foto e todo produto aparecem dentro do espelho oval com LED
+  que está em todas as fotos do Adélia & Guga; recusa o template rosa-creme de beleza e o grid de ícones.
+  OWN-WORLD: verde-petróleo do logo (#013437) como chão, dourado metálico nas letras e filetes, menta das
+  paredes do salão nas seções claras; o hero mostra a foto real do salão levemente desfocada, sem tinta
+  de cor, só uma sombra neutra para o texto. Montserrat em todo o site
+  (títulos 800 em caixa alta, texto 400–500), escolha da cliente. Molduras em estádio/arco com aro de LED menta.
+  STORY: a cliente vê resultados reais ("É o cabelo dela?"), escolhe a textura, compra mechas e kits ou
+  reserva um serviço com sinal de R$ 50, calcula o frete pelo CEP e paga no Pix.
+  FIRST VIEWPORT: foto do salão em tela cheia, desfocada, com sombra neutra; à esquerda o título em duas cores
+  (marfim/dourado) com ação "Comprar mechas"; à direita três espelhos ovais (cacheado, ondulado, liso) em
+  leque com o selo giratório; barra petróleo com logo e sacola.
+  FORM: direção fixada pelo briefing (referências 1–4 do cliente); sorteio de conceito indisponível neste
+  pacote, sem seed key.
+  FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, and DESIGN.md
+-->
+  <svg class="sprite" aria-hidden="true" focusable="false">
+    <symbol id="i-bag" viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
+    <symbol id="i-arrow-up" viewBox="0 0 24 24"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="M12 5v14"/></symbol>
+    <symbol id="i-minus" viewBox="0 0 24 24"><path d="M5 12h14"/></symbol>
+    <symbol id="i-truck" viewBox="0 0 24 24"><path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"/><path d="M15 18H9"/><path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14"/><circle cx="17" cy="18" r="2"/><circle cx="7" cy="18" r="2"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></symbol>
+    <symbol id="i-store" viewBox="0 0 24 24"><path d="M3 9.5 4.6 4.3A1 1 0 0 1 5.55 3.6h12.9a1 1 0 0 1 .95.7L21 9.5"/><path d="M3 9.5h18v1a3 3 0 0 1-6 0 3 3 0 0 1-6 0 3 3 0 0 1-6 0z"/><path d="M5 13.4V20a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-6.6"/><path d="M10 21v-4h4v4"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><rect width="14" height="14" x="8" y="8" rx="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></symbol>
+    <symbol id="i-insta" viewBox="0 0 24 24"><rect width="20" height="20" x="2" y="2" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><path d="M17.5 6.5h.01"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16"/><path d="M4 12h16"/><path d="M4 17h10"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="i-left" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></symbol>
+    <symbol id="i-right" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></symbol>
+    <symbol id="i-trash" viewBox="0 0 24 24"><path d="M3 6h18"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"/><path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></symbol>
+    <symbol id="i-tv" viewBox="0 0 24 24"><rect width="20" height="15" x="2" y="7" rx="2"/><path d="m17 2-5 5-5-5"/></symbol>
+    <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4.5"/><path d="M20 21a8 8 0 0 0-16 0"/></symbol>
+    <symbol id="i-swap" viewBox="0 0 24 24"><path d="m9 7-5 5 5 5"/><path d="m15 7 5 5-5 5"/></symbol>
+    <symbol id="i-wa" viewBox="0 0 24 24"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/><path transform="translate(7.1 7.1) scale(0.41)" vector-effect="non-scaling-stroke" d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+  </svg>
+
+  <a class="skip" href="#loja">Pular para a loja</a>
+
+  <div class="demo-bar" id="demoBar" hidden>
+    <p><strong>Modo demonstração.</strong> <span id="demoBarText">Preços, estoques, produtos e imagens são exemplos fictícios ou pegos do Instagram.</span></p>
+  </div>
+
+  <header class="topbar" id="topbar">
+    <div class="topbar__inner">
+      <a class="brand" href="#inicio" aria-label="Adélia & Guga Mega Hair, início">
+        <img class="brand__logo" src="assets/logo.png" alt="" width="48" height="48">
+        <span class="brand__name">Adélia &amp; Guga<small>mega hair</small></span>
+      </a>
+      <nav class="nav" id="nav" aria-label="Principal">
+        <a href="#loja">Loja</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#entrega">Entrega</a>
+        <a href="#instagram">Instagram</a>
+      </nav>
+      <div class="topbar__actions">
+        <a class="btn btn--gold btn--sm topbar__book" href="#servicos">
+          <span class="btn__label">Reservar horário</span>
+        </a>
+        <a class="account-btn" id="accountButton" href="entrar.html" aria-label="Entrar ou criar conta">
+          <svg class="icon"><use href="#i-user"/></svg>
+          <span class="account-btn__label" id="accountLabel">Entrar</span>
+        </a>
+        <button class="cart-btn" id="cartButton" type="button" aria-label="Abrir sacola, 0 itens">
+          <svg class="icon"><use href="#i-bag"/></svg>
+          <span class="cart-btn__count" id="cartCount" aria-hidden="true">0</span>
+        </button>
+        <button class="menu-btn" id="menuButton" type="button" aria-expanded="false" aria-controls="nav" aria-label="Abrir menu">
+          <svg class="icon"><use href="#i-menu"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+      <div class="hero__media" aria-hidden="true">
+        <img src="assets/salao.jpg" alt="" width="480" height="360" fetchpriority="high">
+      </div>
+      <div class="hero__inner">
+        <div class="hero__copy">
+          <h1 class="hero__title">
+            <span class="hero__line"><span>É o cabelo</span></span>
+            <span class="hero__line hero__line--gold"><span>dela?</span></span>
+          </h1>
+          <p class="hero__lede">Mega hair fio a fio que se mistura ao seu cabelo. Compre mechas de fios naturais, leve os cuidados para casa e reserve seu horário no salão em Alphaville.</p>
+          <div class="hero__actions">
+            <a class="btn btn--gold btn--lg" href="#loja">
+              <span class="btn__label">Comprar mechas</span>
+              <span class="btn__icon"><svg class="icon"><use href="#i-arrow"/></svg></span>
+            </a>
+            <a class="btn btn--ghost btn--lg" href="#servicos">
+              <span class="btn__label">Ver serviços</span>
+            </a>
+          </div>
+          <ul class="hero__facts">
+            <li><svg class="icon"><use href="#i-pin"/></svg>Calçada Flor de Lótus, 9 · Alphaville</li>
+            <li><svg class="icon"><use href="#i-truck"/></svg>Entrega por km a partir do salão</li>
+          </ul>
+        </div>
+
+        <div class="hero__mirrors" id="heroMirrors">
+          <button class="mirror mirror--a" type="button" data-texture="cacheado" style="--i:0">
+            <img src="assets/instagram/resultado-cacheado.jpg" alt="Mega hair cacheado mel, visto de costas no salão" width="360" height="640">
+            <span class="mirror__label">Cacheado <svg class="icon"><use href="#i-arrow"/></svg></span>
+          </button>
+          <button class="mirror mirror--b" type="button" data-texture="ondulado" style="--i:1">
+            <img src="assets/instagram/resultado-ondulado.jpg" alt="Mega hair ondulado loiro mel, visto de costas no salão" width="361" height="640">
+            <span class="mirror__label">Ondulado <svg class="icon"><use href="#i-arrow"/></svg></span>
+          </button>
+          <button class="mirror mirror--c" type="button" data-texture="liso" style="--i:2">
+            <img src="assets/instagram/resultado-liso.jpg" alt="Mega hair liso castanho com pontas claras, visto de costas" width="360" height="640">
+            <span class="mirror__label">Liso <svg class="icon"><use href="#i-arrow"/></svg></span>
+          </button>
+          <div class="seal" aria-hidden="true">
+            <svg viewBox="0 0 200 200">
+              <defs><path id="sealPath" d="M100 100 m-74 0 a74 74 0 1 1 148 0 a74 74 0 1 1 -148 0"/></defs>
+              <text><textPath href="#sealPath" startOffset="0" textLength="458" lengthAdjust="spacing">MEGA HAIR · FIO A FIO · ALPHAVILLE ·</textPath></text>
+            </svg>
+            <img src="assets/logo.png" alt="" width="150" height="150">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CAMINHOS -->
+    <nav class="paths" aria-label="Por onde começar">
+      <a class="path" href="#loja" data-filter="mechas" style="--i:0">
+        <img src="assets/instagram/resultado-ondulado.jpg" alt="" loading="lazy" width="361" height="640">
+        <span class="path__body">
+          <span class="path__title">Mechas</span>
+          <span class="path__text">Fios naturais lisos, ondulados e cacheados.</span>
+        </span>
+        <span class="round-arrow" aria-hidden="true"><svg class="icon"><use href="#i-arrow-up"/></svg></span>
+      </a>
+      <a class="path" href="#servicos" style="--i:1">
+        <img src="assets/instagram/tonalizacao-processo.jpg" alt="" loading="lazy" width="361" height="640" style="object-position: 50% 34%">
+        <span class="path__body">
+          <span class="path__title">Salão</span>
+          <span class="path__text">Mega hair, luzes, progressiva e unhas.</span>
+        </span>
+        <span class="round-arrow" aria-hidden="true"><svg class="icon"><use href="#i-arrow-up"/></svg></span>
+      </a>
+      <a class="path" href="#servicos" data-spotlight="book" style="--i:2">
+        <!-- Foto: Unsplash (licença gratuita). Recepção de salão com a agenda de horários na tela. -->
+        <img src="https://images.unsplash.com/photo-1758556549027-879615701c61?auto=format&amp;fit=crop&amp;w=900&amp;q=75" alt="" loading="lazy" width="900" height="600" style="object-position: 50% 40%">
+        <span class="path__body">
+          <span class="path__title">Agenda</span>
+          <span class="path__text">Sinal de R$ 50 via Pix garante seu horário.</span>
+        </span>
+        <span class="round-arrow" aria-hidden="true"><svg class="icon"><use href="#i-arrow-up"/></svg></span>
+      </a>
+    </nav>
+
+    <!-- LOJA -->
+    <section class="shop" id="loja" aria-labelledby="shopTitle">
+      <div class="section-head">
+        <h2 class="display" id="shopTitle">Escolha seu fio</h2>
+        <p>Mechas de fios naturais em pacotes de 50 g, kits e acessórios para o mega hair durar em casa.</p>
+      </div>
+      <div class="filters" role="group" aria-label="Filtrar produtos">
+        <div class="segmented" id="categoryFilter"></div>
+        <div class="chips" id="textureFilter" hidden></div>
+      </div>
+      <p class="sr-only" id="shopStatus" role="status"></p>
+      <div class="grid" id="productGrid"></div>
+    </section>
+
+    <!-- SERVIÇOS -->
+    <section class="salon" id="servicos" aria-labelledby="salonTitle">
+      <div class="salon__intro">
+        <h2 class="display display--light" id="salonTitle">Serviços e valores</h2>
+        <p>Valores a partir de, confirmados na avaliação. Para garantir o seu dia e horário, é só adiantar <strong>R$ 50,00 via Pix</strong> e deixar tudo certinho com a nossa equipe.</p>
+        <figure class="salon__mirror">
+          <img src="assets/instagram/equipe-salao.jpg" alt="Equipe e clientes reunidos no salão Adélia & Guga, com paredes verdes e o logo dourado" loading="lazy" width="360" height="640">
+        </figure>
+        <button class="btn btn--gold btn--lg" type="button" data-book="reserva-de-horario">
+          <span class="btn__label">Reservar avaliação</span>
+          <span class="btn__icon"><svg class="icon"><use href="#i-calendar"/></svg></span>
+        </button>
+      </div>
+      <div class="salon__menu" id="serviceMenu"></div>
+    </section>
+
+    <!-- ANTES & DEPOIS -->
+    <section class="ba" id="antes-depois" aria-labelledby="baTitle" hidden>
+      <div class="ba__copy">
+        <h2 class="display" id="baTitle">Antes &amp; depois</h2>
+        <p class="ba__lede">Transformações reais, fio a fio.</p>
+        <p class="ba__caption" id="baCaption"></p>
+        <div class="ba__controls">
+          <button class="icon-btn" type="button" id="baPrev" aria-label="Transformação anterior"><svg class="icon"><use href="#i-left"/></svg></button>
+          <p class="ba__count" id="baCount" aria-live="polite">01 — 01</p>
+          <button class="icon-btn" type="button" id="baNext" aria-label="Próxima transformação"><svg class="icon"><use href="#i-right"/></svg></button>
+        </div>
+        <a class="btn btn--petrol" id="baInsta" href="https://www.instagram.com/adelia_cabelos/" target="_blank" rel="noopener">
+          <span class="btn__label">Ver mais no Instagram</span>
+          <span class="btn__icon"><svg class="icon"><use href="#i-arrow-up"/></svg></span>
+        </a>      </div>
+      <figure class="ba__stage" id="baStage" style="--pos:50%">
+        <img class="ba__img" id="baBefore" src="" alt="">
+        <div class="ba__after"><img class="ba__img" id="baAfter" src="" alt=""></div>
+        <span class="ba__tag ba__tag--before">Antes</span>
+        <span class="ba__tag ba__tag--after">Depois</span>
+        <span class="ba__handle" aria-hidden="true"><svg class="icon"><use href="#i-swap"/></svg></span>
+        <label class="sr-only" for="baRange">Comparar antes e depois</label>
+        <input class="ba__range" id="baRange" type="range" min="0" max="100" value="50">
+      </figure>
+    </section>
+
+    <!-- ENTREGA -->
+    <section class="freight" id="entrega" aria-labelledby="freightTitle">
+      <div class="freight__copy">
+        <h2 class="display" id="freightTitle">Entrega por km</h2>
+        <p>Saímos da Calçada Flor de Lótus, 9, no Centro Comercial de Alphaville. Digite seu CEP e medimos a rota de carro até você.</p>
+        <form class="cep-form" id="freightForm" novalidate>
+          <label class="field-label" for="freightCep">Seu CEP</label>
+          <div class="cep-field">
+            <input class="input" id="freightCep" name="cep" inputmode="numeric" autocomplete="postal-code" placeholder="00000-000" maxlength="9" aria-describedby="freightHelp">
+            <button class="btn btn--petrol" type="submit">
+              <span class="btn__label">Calcular frete</span>
+              <span class="btn__icon"><svg class="icon"><use href="#i-truck"/></svg></span>
+            </button>
+          </div>
+          <p class="field-help" id="freightHelp">Não lembra? <a href="https://buscacepinter.correios.com.br/app/endereco/index.php" target="_blank" rel="noopener">Busque seu CEP nos Correios</a>.</p>
+        </form>
+        <div class="quote" id="freightResult" aria-live="polite"></div>
+        <dl class="rule" id="freightRule"></dl>
+      </div>
+      <div class="radar" id="radar" role="img" aria-label="Mapa de raio de entrega a partir do salão">
+        <svg viewBox="-210 -210 420 420" aria-hidden="true">
+          <defs>
+            <radialGradient id="radarBg" cx="0" cy="0" r="210" gradientUnits="userSpaceOnUse">
+              <stop offset="0" stop-color="#0c4a4c"/><stop offset="1" stop-color="#01242a"/>
+            </radialGradient>
+            <linearGradient id="sweep" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0" stop-color="#d9b665" stop-opacity="0"/><stop offset="1" stop-color="#d9b665" stop-opacity=".28"/>
+            </linearGradient>
+          </defs>
+          <circle r="200" fill="url(#radarBg)"/>
+          <g class="radar__sweep"><path d="M0 0 L200 0 A200 200 0 0 0 141 -141 Z" fill="url(#sweep)"/></g>
+          <g class="radar__rings" id="radarRings"></g>
+          <g class="radar__route" id="radarRoute"></g>
+          <g class="radar__origin">
+            <circle r="16" class="radar__pulse"/>
+            <circle r="9"/>
+          </g>
+          <text class="radar__north" x="0" y="-186">N</text>
+        </svg>
+        <p class="radar__legend"><span class="dot dot--gold"></span>Salão <span class="dot dot--sun"></span>Seu CEP</p>
+      </div>
+    </section>
+
+    <!-- NA TV -->
+    <section class="press" aria-labelledby="pressTitle">
+      <figure class="press__frame">
+        <img src="assets/instagram/programa-momentos.jpg" alt="Adélia em entrevista no estúdio do programa Momentos com Sonia Apolonio" loading="lazy" width="480" height="640">
+      </figure>
+      <div class="press__copy">
+        <h2 class="display display--light" id="pressTitle">Nossa história na TV</h2>
+        <p>Adélia contou a trajetória do salão e conversou sobre beleza feminina no programa <em>Momentos com Sonia Apolonio</em>, na ComBrasil TV.</p>
+        <a class="btn btn--ghost" href="https://www.instagram.com/adelia_cabelos/" target="_blank" rel="noopener">
+          <span class="btn__label">Ver no Instagram</span>
+          <span class="btn__icon"><svg class="icon"><use href="#i-tv"/></svg></span>
+        </a>
+      </div>
+    </section>
+
+    <!-- INSTAGRAM -->
+    <section class="insta" id="instagram" aria-labelledby="instaTitle">
+      <div class="insta__head">
+        <h2 class="display" id="instaTitle">No salão</h2>
+        <p>Bastidores, resultados e cafezinho. Tudo no <strong>@adelia_cabelos</strong>.</p>
+        <a class="btn btn--gold" href="https://www.instagram.com/adelia_cabelos/" target="_blank" rel="noopener">
+          <span class="btn__label">Seguir no Instagram</span>
+          <span class="btn__icon"><svg class="icon"><use href="#i-insta"/></svg></span>
+        </a>
+      </div>
+      <div class="marquee" id="instaMarquee">
+        <ul class="marquee__track" id="instaTrack"></ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <img src="assets/logo.png" alt="Adélia & Guga Mega Hair" width="96" height="96" loading="lazy">
+        <p>Mega hair, cabelo e unhas no Centro Comercial de Alphaville.</p>
+      </div>
+      <div class="footer__col">
+        <h2>Salão</h2>
+        <p><a id="mapsLink" href="#" target="_blank" rel="noopener">Calçada Flor de Lótus, 9<br>Centro Comercial de Alphaville<br>Barueri/SP · CEP 06453-016</a></p>
+      </div>
+      <div class="footer__col">
+        <h2>Fale com a gente</h2>
+        <p><a id="waLink" href="#" target="_blank" rel="noopener"><svg class="icon"><use href="#i-chat"/></svg>WhatsApp</a></p>
+        <p><a href="https://www.instagram.com/adelia_cabelos/" target="_blank" rel="noopener"><svg class="icon"><use href="#i-insta"/></svg>@adelia_cabelos</a></p>
+      </div>
+      <div class="footer__col">
+        <h2>Loja</h2>
+        <p><a href="#loja">Mechas e kits</a></p>
+        <p><a href="#servicos">Reservar horário</a></p>
+        <p><a href="#entrega">Calcular frete</a></p>
+      </div>
+    </div>
+    <div class="footer__base">
+      <p>© <span id="year">2026</span> Adélia &amp; Guga Mega Hair</p>
+      <p>Projeto de interiores do salão: ULHÔA Design de Interiores &amp; Arquitetura</p>
+    </div>
+  </footer>
+
+  <!-- SACOLA -->
+  <dialog class="drawer" id="cartDialog" aria-labelledby="drawerTitle">
+    <div class="drawer__head">
+      <button class="icon-btn icon-btn--plain" type="button" id="drawerBack" aria-label="Voltar" hidden><svg class="icon"><use href="#i-left"/></svg></button>
+      <h2 class="drawer__title" id="drawerTitle">Sua sacola</h2>
+      <button class="icon-btn icon-btn--plain" type="button" data-close aria-label="Fechar sacola"><svg class="icon"><use href="#i-x"/></svg></button>
+    </div>
+    <ol class="steps" aria-label="Etapas da compra">
+      <li data-step="cart">Sacola</li>
+      <li data-step="checkout">Dados</li>
+      <li data-step="pix">Pix</li>
+    </ol>
+    <div class="drawer__body" id="drawerBody"></div>
+  </dialog>
+
+  <!-- RESERVA DE SERVIÇO -->
+  <dialog class="sheet" id="bookDialog" aria-labelledby="bookTitle">
+    <form class="sheet__form" id="bookForm" method="dialog" novalidate>
+      <div class="sheet__head">
+        <h2 class="sheet__title" id="bookTitle">Reservar horário</h2>
+        <button class="icon-btn icon-btn--plain" type="button" data-close aria-label="Fechar"><svg class="icon"><use href="#i-x"/></svg></button>
+      </div>
+      <p class="sheet__service" id="bookService"></p>
+      <div class="field">
+        <label class="field-label" for="bookDate">Data</label>
+        <input class="input" type="date" id="bookDate" name="date" required>
+      </div>
+      <fieldset class="field">
+        <legend class="field-label">Horário <span class="slots__hours" id="bookHours"></span></legend>
+        <div class="slots" id="bookSlots"></div>
+        <p class="slots__note" id="bookSlotsNote" role="status"></p>
+      </fieldset>
+      <p class="sheet__note">O sinal de <strong id="bookDeposit">R$ 50,00</strong> é pago via Pix ao finalizar e garante o seu horário. A equipe confirma pelo WhatsApp.</p>
+      <p class="form-error" id="bookError" role="alert" hidden></p>
+      <button class="btn btn--gold btn--lg btn--block" type="submit">
+        <span class="btn__label">Adicionar reserva à sacola</span>
+        <span class="btn__icon"><svg class="icon"><use href="#i-bag"/></svg></span>
+      </button>
+    </form>
+  </dialog>
+
+  <!-- SUPORTE VIA WHATSAPP -->
+  <aside class="support" id="support" aria-label="Suporte">
+    <div class="support__panel" id="supportPanel" role="dialog" aria-labelledby="supportTitle" hidden>
+      <div class="support__head">
+        <img src="assets/logo.png" alt="" width="44" height="44">
+        <div>
+          <h2 id="supportTitle">Suporte Adélia &amp; Guga</h2>
+          <p>Atendimento pelo WhatsApp</p>
+        </div>
+        <button class="icon-btn icon-btn--plain support__close" type="button" id="supportClose" aria-label="Fechar suporte"><svg class="icon"><use href="#i-x"/></svg></button>
+      </div>
+      <div class="support__body">
+        <p class="support__lede">Como podemos ajudar?</p>
+        <ul class="support__topics">
+          <li><a data-topic="mechas" href="#" target="_blank" rel="noopener">Dúvida sobre mechas e tons <svg class="icon"><use href="#i-arrow-up"/></svg></a></li>
+          <li><a data-topic="pedido" href="#" target="_blank" rel="noopener">Acompanhar meu pedido <svg class="icon"><use href="#i-arrow-up"/></svg></a></li>
+          <li><a data-topic="agenda" href="#" target="_blank" rel="noopener">Agendar ou remarcar horário <svg class="icon"><use href="#i-arrow-up"/></svg></a></li>
+          <li><a data-topic="entrega" href="#" target="_blank" rel="noopener">Entrega e frete <svg class="icon"><use href="#i-arrow-up"/></svg></a></li>
+          <li><a data-topic="pix" href="#" target="_blank" rel="noopener">Pagamento via Pix <svg class="icon"><use href="#i-arrow-up"/></svg></a></li>
+        </ul>
+        <form class="support__form" id="supportForm" novalidate>
+          <label class="field-label" for="supportMsg">Ou escreva sua mensagem</label>
+          <textarea class="input" id="supportMsg" rows="3" maxlength="600" placeholder="Ex.: quero saber quantos pacotes preciso para 60 cm"></textarea>
+          <p class="field-error" id="supportErr" hidden>Escreva sua mensagem antes de enviar.</p>
+          <button class="btn btn--gold btn--block" type="submit">
+            <span class="btn__label">Enviar no WhatsApp</span><span class="btn__icon"><svg class="icon"><use href="#i-wa"/></svg></span>
+          </button>
+        </form>
+        <p class="support__note">Abre o WhatsApp com a mensagem pronta. Você revisa antes de enviar.</p>
+      </div>
+    </div>
+    <button class="support__tab" type="button" id="supportToggle" aria-expanded="false" aria-controls="supportPanel" aria-label="Abrir suporte pelo WhatsApp">
+      <span class="support__tab-icon" aria-hidden="true">
+        <svg class="icon icon--wa"><use href="#i-wa"/></svg>
+        <svg class="icon icon--x"><use href="#i-x"/></svg>
+      </span>
+      <span class="support__tab-label">Suporte</span>
+    </button>
+  </aside>
+
+  <div class="toasts" id="toasts" role="status" aria-live="polite"></div>
+
+  <noscript><p class="noscript">Ative o JavaScript para ver o catálogo e comprar.</p></noscript>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.min.js" defer></script>
+  <script src="js/config.js" defer></script>
+  <script src="js/auth.js" defer></script>
+  <script src="js/catalog.js" defer></script>
+  <script src="js/pix.js" defer></script>
+  <script src="js/store.js" defer></script>
+  <script src="js/app.js" defer></script>
+</body>
+</html>

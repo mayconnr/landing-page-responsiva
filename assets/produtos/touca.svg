@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 360" role="img" aria-label="Touca de cetim">
+  <defs>
+    <linearGradient id="satin" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fbf0d6"/><stop offset=".35" stop-color="#e2c27e"/><stop offset=".6" stop-color="#f6e3ae"/><stop offset="1" stop-color="#b98d42"/>
+    </linearGradient>
+    <linearGradient id="band" x1="0" x2="1">
+      <stop offset="0" stop-color="#0d5355"/><stop offset=".5" stop-color="#013437"/><stop offset="1" stop-color="#00222a"/>
+    </linearGradient>
+  </defs>
+  <ellipse cx="160" cy="318" rx="128" ry="11" fill="#013437" opacity=".16"/>
+  <path d="M42 248 C34 120 110 64 166 64 C232 64 292 124 280 248 Z" fill="url(#satin)"/>
+  <path d="M84 120 C108 92 150 82 188 90" fill="none" stroke="#fff" stroke-width="10" stroke-linecap="round" opacity=".45"/>
+  <path d="M70 196 C100 150 160 140 230 150" fill="none" stroke="#9a7330" stroke-width="3" opacity=".35"/>
+  <path d="M60 228 C110 196 190 192 262 210" fill="none" stroke="#9a7330" stroke-width="3" opacity=".3"/>
+  <path d="M38 244 q12 -14 24 0 q12 14 24 0 q12 -14 24 0 q12 14 24 0 q12 -14 24 0 q12 14 24 0 q12 -14 24 0 q12 14 24 0 q12 -14 24 0 q12 14 24 0 v34 q-12 14 -24 0 q-12 -14 -24 0 q-12 14 -24 0 q-12 -14 -24 0 q-12 14 -24 0 q-12 -14 -24 0 q-12 14 -24 0 q-12 -14 -24 0 q-12 14 -24 0 q-12 -14 -24 0 z" fill="url(#band)"/>
+  <path d="M40 262 h240" stroke="#d9b665" stroke-width="2" stroke-dasharray="2 6" stroke-linecap="round"/>
+</svg>

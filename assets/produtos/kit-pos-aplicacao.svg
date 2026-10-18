@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 360" role="img" aria-label="Kit pós-aplicação: shampoo e condicionador">
+  <defs>
+    <linearGradient id="body" x1="0" x2="1">
+      <stop offset="0" stop-color="#0d5355"/><stop offset=".45" stop-color="#013437"/><stop offset="1" stop-color="#00222a"/>
+    </linearGradient>
+    <linearGradient id="mint" x1="0" x2="1">
+      <stop offset="0" stop-color="#e5f3ee"/><stop offset=".5" stop-color="#bfe3d8"/><stop offset="1" stop-color="#8fc9ba"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f6e3ae"/><stop offset=".45" stop-color="#d9b665"/><stop offset="1" stop-color="#9a7330"/>
+    </linearGradient>
+  </defs>
+  <ellipse cx="160" cy="326" rx="118" ry="10" fill="#013437" opacity=".16"/>
+  <!-- condicionador (claro, de ponta-cabeça) -->
+  <rect x="172" y="70" width="88" height="214" rx="30" fill="url(#mint)"/>
+  <rect x="181" y="84" width="8" height="184" rx="4" fill="#fff" opacity=".45"/>
+  <path d="M178 276 h76 a6 6 0 0 1 6 6 v34 a8 8 0 0 1 -8 8 h-72 a8 8 0 0 1 -8 -8 v-34 a6 6 0 0 1 6 -6z" fill="url(#gold)"/>
+  <rect x="186" y="132" width="60" height="96" rx="8" fill="#013437"/>
+  <ellipse cx="216" cy="166" rx="10" ry="16" fill="none" stroke="#d9b665" stroke-width="2.5"/>
+  <rect x="200" y="194" width="32" height="3" rx="1.5" fill="#d9b665" opacity=".8"/>
+  <rect x="206" y="202" width="20" height="3" rx="1.5" fill="#d9b665" opacity=".55"/>
+  <!-- shampoo (escuro) -->
+  <path d="M66 96 a6 6 0 0 1 6 -6 h70 a6 6 0 0 1 6 6 v30 h-82z" fill="url(#gold)"/>
+  <rect x="60" y="120" width="94" height="204" rx="30" fill="url(#body)"/>
+  <rect x="69" y="134" width="8" height="176" rx="4" fill="#fff" opacity=".13"/>
+  <rect x="77" y="178" width="60" height="96" rx="8" fill="url(#gold)"/>
+  <ellipse cx="107" cy="212" rx="10" ry="16" fill="none" stroke="#013437" stroke-width="2.5"/>
+  <rect x="91" y="240" width="32" height="3" rx="1.5" fill="#013437" opacity=".7"/>
+  <rect x="97" y="248" width="20" height="3" rx="1.5" fill="#013437" opacity=".5"/>
+</svg>

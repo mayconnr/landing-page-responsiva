@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Entrar · Adélia &amp; Guga Mega Hair</title>
+  <meta name="description" content="Entre ou crie sua conta na loja Adélia & Guga Mega Hair para acompanhar pedidos e reservas.">
+  <meta name="theme-color" content="#013437">
+  <link rel="icon" href="assets/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400..900;1,400..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/entrar.css">
+</head>
+<body class="auth-page">
+  <svg class="sprite" aria-hidden="true" focusable="false">
+    <symbol id="i-left" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></symbol>
+    <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2.06 12.35a1 1 0 0 1 0-.7 10.75 10.75 0 0 1 19.88 0 1 1 0 0 1 0 .7 10.75 10.75 0 0 1-19.88 0"/><circle cx="12" cy="12" r="3"/></symbol>
+    <symbol id="i-eye-off" viewBox="0 0 24 24"><path d="M10.73 5.08A10.43 10.43 0 0 1 12 5c4.97 0 8.36 3.97 9.94 6.65a1 1 0 0 1 0 .7 13.16 13.16 0 0 1-1.67 2.68"/><path d="M14.08 14.16a3 3 0 0 1-4.24-4.24"/><path d="M17.48 17.5A10.75 10.75 0 0 1 2.06 12.35a1 1 0 0 1 0-.7 13 13 0 0 1 4.46-5.15"/><path d="m2 2 20 20"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+    <symbol id="i-bag" viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></symbol>
+    <symbol id="i-logout" viewBox="0 0 24 24"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><path d="m16 17 5-5-5-5"/><path d="M21 12H9"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol>
+  </svg>
+
+  <main class="auth">
+    <section class="auth__panel">
+      <a class="auth__back" href="index.html"><svg class="icon"><use href="#i-left"/></svg>Voltar à loja</a>
+
+      <div class="auth__card" id="authCard">
+        <a class="auth__brand" href="index.html" aria-label="Adélia & Guga Mega Hair, voltar à loja">
+          <img src="assets/logo.png" alt="" width="56" height="56">
+        </a>
+
+        <!-- ENTRAR / CRIAR CONTA -->
+        <div id="viewAuth">
+          <h1 class="auth__title" id="authTitle">Entrar</h1>
+          <div class="auth__switch" role="tablist" aria-label="Entrar ou criar conta">
+            <button type="button" role="tab" id="tabLogin" aria-selected="true" aria-controls="loginForm">Entrar</button>
+            <button type="button" role="tab" id="tabSignup" aria-selected="false" aria-controls="signupForm">Criar conta</button>
+          </div>
+
+          <form class="auth__form" id="loginForm" role="tabpanel" aria-labelledby="tabLogin" novalidate>
+            <div class="field">
+              <label class="field-label" for="loginEmail">E-mail</label>
+              <input class="input" id="loginEmail" name="email" type="email" autocomplete="email" inputmode="email" required>
+            </div>
+            <div class="field">
+              <label class="field-label" for="loginPassword">Senha</label>
+              <div class="password">
+                <input class="input" id="loginPassword" name="password" type="password" autocomplete="current-password" required>
+                <button class="password__toggle" type="button" aria-label="Mostrar senha" aria-pressed="false"><svg class="icon"><use href="#i-eye"/></svg></button>
+              </div>
+            </div>
+            <button class="auth__link auth__forgot" type="button" id="forgotLink">Esqueci minha senha</button>
+            <p class="form-error" role="alert" hidden></p>
+            <button class="btn btn--petrol btn--lg btn--block" type="submit"><span class="btn__label">Entrar</span></button>
+          </form>
+
+          <form class="auth__form" id="signupForm" role="tabpanel" aria-labelledby="tabSignup" novalidate hidden>
+            <div class="field">
+              <label class="field-label" for="signupName">Nome</label>
+              <input class="input" id="signupName" name="name" autocomplete="name" required>
+            </div>
+            <div class="field">
+              <label class="field-label" for="signupPhone">WhatsApp</label>
+              <input class="input" id="signupPhone" name="phone" type="tel" inputmode="tel" autocomplete="tel-national" placeholder="(11) 90000-0000" required>
+            </div>
+            <div class="field">
+              <label class="field-label" for="signupEmail">E-mail</label>
+              <input class="input" id="signupEmail" name="email" type="email" autocomplete="email" inputmode="email" required>
+            </div>
+            <div class="field">
+              <label class="field-label" for="signupPassword">Senha <small>(mínimo 6 caracteres)</small></label>
+              <div class="password">
+                <input class="input" id="signupPassword" name="password" type="password" autocomplete="new-password" minlength="6" required>
+                <button class="password__toggle" type="button" aria-label="Mostrar senha" aria-pressed="false"><svg class="icon"><use href="#i-eye"/></svg></button>
+              </div>
+            </div>
+            <p class="form-error" role="alert" hidden></p>
+            <button class="btn btn--petrol btn--lg btn--block" type="submit"><span class="btn__label">Criar conta</span></button>
+          </form>
+
+          <div class="auth__divider"><span>ou entre com</span></div>
+          <div class="auth__social">
+            <button class="social-btn" type="button" data-provider="google">
+              <svg viewBox="0 0 48 48" aria-hidden="true"><path fill="#FFC107" d="M43.6 20.1H42V20H24v8h11.3C33.7 32.7 29.2 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.8 1.2 8 3l5.7-5.7C34 6.1 29.3 4 24 4 13 4 4 13 4 24s9 20 20 20 20-9 20-20c0-1.3-.1-2.6-.4-3.9z"/><path fill="#FF3D00" d="m6.3 14.7 6.6 4.8C14.7 15.1 19 12 24 12c3.1 0 5.8 1.2 8 3l5.7-5.7C34 6.1 29.3 4 24 4 16.3 4 9.7 8.3 6.3 14.7z"/><path fill="#4CAF50" d="M24 44c5.2 0 9.9-2 13.4-5.2l-6.2-5.2c-2 1.5-4.5 2.4-7.2 2.4-5.2 0-9.6-3.3-11.3-7.9l-6.5 5C9.5 39.6 16.2 44 24 44z"/><path fill="#1976D2" d="M43.6 20.1H42V20H24v8h11.3c-.8 2.2-2.2 4.2-4.1 5.6l6.2 5.2C37 39.2 44 34 44 24c0-1.3-.1-2.6-.4-3.9z"/></svg>
+              Google
+            </button>
+            <button class="social-btn" type="button" data-provider="azure">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="2" width="9.5" height="9.5" fill="#F25022"/><rect x="12.5" y="2" width="9.5" height="9.5" fill="#7FBA00"/><rect x="2" y="12.5" width="9.5" height="9.5" fill="#00A4EF"/><rect x="12.5" y="12.5" width="9.5" height="9.5" fill="#FFB900"/></svg>
+              Microsoft
+            </button>
+          </div>
+          <p class="auth__notice" id="socialNotice" role="status" hidden></p>
+        </div>
+
+        <!-- ESQUECI A SENHA -->
+        <form class="auth__form" id="forgotForm" novalidate hidden>
+          <h1 class="auth__title">Recuperar senha</h1>
+          <p class="auth__lede">Digite o e-mail da sua conta. Enviamos um link para você criar uma senha nova.</p>
+          <div class="field">
+            <label class="field-label" for="forgotEmail">E-mail</label>
+            <input class="input" id="forgotEmail" name="email" type="email" autocomplete="email" inputmode="email" required>
+          </div>
+          <p class="form-error" role="alert" hidden></p>
+          <button class="btn btn--petrol btn--lg btn--block" type="submit"><span class="btn__label">Enviar link</span></button>
+          <button class="auth__link" type="button" data-show="viewAuth">Voltar para entrar</button>
+        </form>
+
+        <!-- NOVA SENHA (volta do link do e-mail) -->
+        <form class="auth__form" id="newPasswordForm" novalidate hidden>
+          <h1 class="auth__title">Nova senha</h1>
+          <div class="field">
+            <label class="field-label" for="newPassword">Nova senha <small>(mínimo 6 caracteres)</small></label>
+            <div class="password">
+              <input class="input" id="newPassword" name="password" type="password" autocomplete="new-password" minlength="6" required>
+              <button class="password__toggle" type="button" aria-label="Mostrar senha" aria-pressed="false"><svg class="icon"><use href="#i-eye"/></svg></button>
+            </div>
+          </div>
+          <p class="form-error" role="alert" hidden></p>
+          <button class="btn btn--petrol btn--lg btn--block" type="submit"><span class="btn__label">Salvar nova senha</span></button>
+        </form>
+
+        <!-- MENSAGEM (e-mail enviado, confirmação) -->
+        <div class="auth__message" id="viewMessage" hidden>
+          <span class="auth__message-icon"><svg class="icon"><use href="#i-mail"/></svg></span>
+          <h1 class="auth__title" id="messageTitle">Confira seu e-mail</h1>
+          <p class="auth__lede" id="messageText"></p>
+          <button class="auth__link" type="button" data-show="viewAuth">Voltar para entrar</button>
+        </div>
+
+        <!-- CONTA (logada) -->
+        <div class="account" id="viewAccount" hidden>
+          <h1 class="auth__title">Olá, <span id="accountName"></span></h1>
+          <p class="auth__lede" id="accountEmail"></p>
+          <h2 class="account__subtitle">Meus pedidos</h2>
+          <ul class="account__orders" id="accountOrders"></ul>
+          <a class="btn btn--gold btn--lg btn--block" href="index.html#loja"><span class="btn__label">Ir para a loja</span><span class="btn__icon"><svg class="icon"><use href="#i-bag"/></svg></span></a>
+          <a class="btn btn--petrol btn--block" href="painel.html" id="panelLink" hidden><span class="btn__label">Abrir painel da equipe</span></a>
+          <button class="btn btn--outline btn--block" type="button" id="logoutButton"><span class="btn__label">Sair da conta</span></button>
+        </div>
+      </div>
+
+      <p class="auth__demo" id="authDemo" hidden>Modo demonstração: a conta fica salva só neste navegador até o Supabase ser conectado.</p>
+    </section>
+
+    <section class="auth__art" aria-hidden="true">
+      <!-- Foto: Unsplash (licença gratuita), folhas de palmeira -->
+      <img class="auth__leaves" src="https://images.unsplash.com/photo-1518965539400-77d851d65c43?auto=format&amp;fit=crop&amp;w=1400&amp;q=75" alt="">
+      <svg class="auth__paper auth__paper--edge" viewBox="0 0 400 1000" preserveAspectRatio="none">
+        <defs>
+          <filter id="paperShadow" x="-20%" y="-5%" width="140%" height="110%">
+            <feDropShadow dx="7" dy="4" stdDeviation="9" flood-color="#00191c" flood-opacity="0.32"/>
+          </filter>
+        </defs>
+        <path filter="url(#paperShadow)" fill="#bfe1d7" d="M0,0 H250 C330,90 300,190 250,260 C190,340 230,430 320,470 C390,505 380,610 300,660 C220,710 250,800 330,860 C380,900 350,960 300,1000 H0 Z"/>
+        <path filter="url(#paperShadow)" fill="#d6ece5" d="M0,0 H190 C260,80 240,170 195,240 C150,310 180,400 255,450 C320,495 315,590 245,640 C175,690 195,780 265,840 C310,880 290,950 250,1000 H0 Z"/>
+        <path filter="url(#paperShadow)" fill="#e6f3ee" d="M0,0 H130 C195,70 180,160 140,225 C100,290 125,380 190,430 C250,475 250,570 185,620 C120,670 140,760 200,820 C245,865 230,945 195,1000 H0 Z"/>
+        <path filter="url(#paperShadow)" fill="#f3faf7" d="M0,0 H70 C130,60 120,150 85,210 C50,270 70,360 125,410 C180,455 185,550 125,600 C65,650 85,740 140,800 C180,845 170,935 140,1000 H0 Z"/>
+      </svg>
+      <svg class="auth__paper auth__paper--corner" viewBox="0 0 400 300" preserveAspectRatio="none">
+        <path filter="url(#paperShadow)" fill="#d6ece5" d="M400,300 H40 C70,250 150,240 190,200 C240,150 230,90 300,60 C340,42 380,40 400,20 Z"/>
+        <path filter="url(#paperShadow)" fill="#f3faf7" d="M400,300 H130 C160,262 220,252 255,220 C295,182 290,135 340,112 C365,100 388,98 400,90 Z"/>
+      </svg>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.min.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/pedidos.js"></script>
+  <script src="js/entrar.js"></script>
+</body>
+</html>

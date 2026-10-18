@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 360" role="img" aria-label="Fronha de cetim">
+  <defs>
+    <linearGradient id="satin" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f2f9f6"/><stop offset=".35" stop-color="#a8dccf"/><stop offset=".62" stop-color="#e0f2ec"/><stop offset="1" stop-color="#6fb3a3"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" x2="1">
+      <stop offset="0" stop-color="#f6e3ae"/><stop offset=".5" stop-color="#d9b665"/><stop offset="1" stop-color="#9a7330"/>
+    </linearGradient>
+  </defs>
+  <ellipse cx="160" cy="300" rx="132" ry="12" fill="#013437" opacity=".16"/>
+  <path d="M30 104 Q32 86 52 90 Q160 70 268 90 Q288 86 290 104 Q300 184 290 266 Q288 284 268 280 Q160 300 52 280 Q32 284 30 266 Q20 184 30 104 Z" fill="url(#satin)"/>
+  <path d="M30 104 Q32 86 52 90 Q160 70 268 90 Q288 86 290 104 Q300 184 290 266 Q288 284 268 280 Q160 300 52 280 Q32 284 30 266 Q20 184 30 104 Z" fill="none" stroke="url(#gold)" stroke-width="4"/>
+  <path d="M70 120 C130 104 200 104 250 122" fill="none" stroke="#fff" stroke-width="12" stroke-linecap="round" opacity=".55"/>
+  <path d="M56 186 C120 166 210 214 266 188" fill="none" stroke="#2b7a76" stroke-width="3" opacity=".3"/>
+  <path d="M60 236 C130 222 196 256 262 236" fill="none" stroke="#2b7a76" stroke-width="3" opacity=".25"/>
+  <path d="M236 92 Q250 160 238 278" fill="none" stroke="url(#gold)" stroke-width="3" opacity=".8"/>
+</svg>

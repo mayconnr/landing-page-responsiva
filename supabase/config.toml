@@ -1,0 +1,8 @@
+# Trecho de configuração do Supabase CLI.
+# Se você já tem um supabase/config.toml (criado pelo "supabase init"),
+# copie só o bloco abaixo para dentro dele.
+
+[functions.calcular-frete]
+# O site chama a função com a chave pública (anon/publishable).
+# A função não expõe dados privados: só lê as regras de frete e grava a cotação.
+verify_jwt = false
